@@ -1,6 +1,12 @@
 # kafka-simple-example
 
-bin/zookeeper-server-start.sh config/zookeeper.properties
+Install Kafka
+https://linuxhint.com/install-apache-kafka-ubuntu/
+
+
+cd /usr/local/kafka
+
+./bin/zookeeper-server-start.sh config/zookeeper.properties
 
 ./bin/kafka-server-start.sh config/server.properties
 
