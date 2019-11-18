@@ -15,4 +15,7 @@ cd /usr/local/kafka
 
 --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic testing
 
+
+## Consumer
+
 ./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --from-beginning
