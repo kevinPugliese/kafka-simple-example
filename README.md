@@ -11,4 +11,8 @@ cd /usr/local/kafka
 ./bin/kafka-server-start.sh config/server.properties
 
 
+## Create topic
+
+--create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic testing
+
 ./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --from-beginning
